@@ -15,10 +15,9 @@ class LandingPad < Sinatra::Base
     $admin_acct_passwd = ENV['haddox4house_password']
 
     # Page settings - used to configure your landing page
-    $page_title = 'LandingPad.rb | Just add water landing pages'
-    $app_title = 'LandingPad.rb'
-    $app_summary = 'Get a page up and running in minutes and
-                    start collecting contacts immediately!'
+    $page_title = 'Steven Haddox for House of Representatives'
+    $app_title = 'Steven Haddox for Congress'
+    $app_summary = '#haddox4house'
     #your google analyics tracking key, if applicable
     $google_analytics_key = 'UA-XXXXXX-X'
 
