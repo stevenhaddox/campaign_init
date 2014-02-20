@@ -19,12 +19,14 @@ class LandingPad < Sinatra::Base
     $app_title = 'Steven Haddox for Congress'
     $app_summary = '#haddox4house'
     #your google analyics tracking key, if applicable
-    $google_analytics_key = 'UA-XXXXXX-X'
+    $google_analytics_key = 'UA-48247659-1'
+    $google_analytics_domain = 'haddox4house.com'
 
     $bg_color = '#2B2F3D'
     $app_title_color = '#FFFFFF'
     #see http://code.google.com/webfonts for available fonts
-    $app_title_font = 'Philosopher'
+    #$app_title_font = 'Philosopher'
+    $app_title_font = 'Varela Round'
 
     # Database settings - do NOT change these
     uri = URI.parse(ENV['MONGOHQ_URL'])

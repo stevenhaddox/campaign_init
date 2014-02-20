@@ -26,7 +26,7 @@
         data: $('#subscribe').serialize(),
         datatype: 'json',
         success: function(data){
-          $("<div class='thanks'>Thanks! We'll update you through " + 
+          $("<div class='thanks'>Thanks! We'll update you through " +
             data.type + "!</div>")
               .hide()
               .appendTo('#container')
@@ -53,14 +53,14 @@
     </h1>
     <div class="box">
       <h2><%= $app_summary %></h2>
-      <h3>Enter your email or Twitter and we'll tell you when it's ready.</h3>
+      <h3>Enter an email or Twitter account and I'll touch base soon!</h3>
       <div id="form_div">
         <form id="subscribe" novalidate>
           <input class="entry" type="email" name="contact" />
           <button id="sign_up">Sign up</button>
         </form>
       </div>
-      <h4>Powered by <a href="http://heroku.com/">Heroku</a> and <a href="http://mongohq.com">MongoHQ</a></h4>
+      <h4>Find me on: <a href="http://twitter.com/haddox4house">Twitter</a> and <a href="http://facebook.com/haddox4house">Facebook</a></h4>
     </div>
   </div>
 </body>
@@ -68,6 +68,7 @@
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', '<%= $google_analytics_key %>']);
+  _gaq.push(['_setDomainName', '<%= $google_analytics_domain ']);
   _gaq.push(['_trackPageview']);
 
   (function() {
