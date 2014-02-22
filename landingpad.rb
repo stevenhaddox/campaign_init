@@ -16,8 +16,14 @@ class LandingPad < Sinatra::Base
 
     # Page settings - used to configure your landing page
     $page_title = 'Steven Haddox for House of Representatives'
+    $home_link = 'Haddox4House'
     $app_title = 'Steven Haddox for Congress'
     $app_summary = '#haddox4house'
+
+    # Social media
+    $twitter_url = 'http://twitter.com/haddox4house'
+    $facebook_url = 'http://facebook.com/haddox4house'
+
     #your google analyics tracking key, if applicable
     $google_analytics_key = 'UA-48247659-1'
     $google_analytics_domain = 'haddox4house.com'
@@ -26,7 +32,7 @@ class LandingPad < Sinatra::Base
     $app_title_color = '#FFFFFF'
     #see http://code.google.com/webfonts for available fonts
     #$app_title_font = 'Philosopher'
-    $app_title_font = 'Varela Round'
+    $app_title_font = 'Lato:300,400,900'
 
     # Database settings - do NOT change these
     uri = URI.parse(ENV['MONGOHQ_URL'])
