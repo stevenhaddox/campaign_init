@@ -15,14 +15,16 @@ class LandingPad < Sinatra::Base
     $admin_acct_passwd = ENV['haddox4house_password']
 
     # Page settings - used to configure your landing page
-    $page_title = 'Steven Haddox for House of Representatives'
+    $page_title = 'Steven Haddox for House of Representatives, MD-8'
     $home_link = 'Haddox4House'
     $app_title = 'Steven Haddox for Congress'
     $app_summary = '#haddox4house'
 
     # Social media
-    $twitter_url = 'http://twitter.com/haddox4house'
+    $twitter_url  = 'http://twitter.com/haddox4house'
     $facebook_url = 'http://facebook.com/haddox4house'
+    $telephone    = '(240) 285-9823'
+    $address      = 'P.O. Box 1425, Frederick, MD 21702'
 
     #your google analyics tracking key, if applicable
     $google_analytics_key = 'UA-48247659-1'

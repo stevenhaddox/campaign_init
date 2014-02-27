@@ -95,8 +95,12 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
-          <h1>Want to know more?<br/>
-          Sign up for my newsletter!</h1>
+          <h1>
+            Personal Liberty<br />
+            Civic Responsibility<br />
+            Government Accountability
+          </h1>
+          <h1>Sign up for my newsletter!</h1>
 
           <div id="form_div">
             <form id="subscribe" class="form-inline" role="form">
@@ -273,7 +277,9 @@
 
 <div class="container colophon">
   <p class="centered">
-    <a href="<%= $twitter_url %>">Twitter</a> || <a href="<%= $facebook_url %>">Facebook</a>
+    <a href="<%= $twitter_url %>">Twitter</a> || <a href="<%= $facebook_url %>">Facebook</a> || <a href="tel:<%= $telephone %>"><%= $telephone %></a>
+    <br />
+    <%= $address %>
     <br />
     <span class="small">Flatty theme created by BlackTie.co - Attribution License 3.0 - 2013</span>
   </p>
@@ -284,18 +290,14 @@
   <!-- Placed at the end of the document so the pages load faster -->
 
   <%# script src="assets/js/bootstrap.min.js"></script %>
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', '<%= $google_analytics_key %>']);
-    _gaq.push(['_setDomainName', '<%= $google_analytics_domain ']);
-    _gaq.push(['_trackPageview']);
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
+    ga("create", "<%= $google_analytics_key %>", "<%= $google_analytics_domain %>");
+    ga("send", "pageview");
   </script>
-
 </body>
 </html>
