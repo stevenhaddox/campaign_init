@@ -25,6 +25,7 @@ class LandingPad < Sinatra::Base
     $twitter_url     = 'http://twitter.com/haddox4house'
     $facebook_url    = 'http://facebook.com/haddox4house'
     $google_plus_url = 'https://plus.google.com/112627062502330983262'
+    $app_net_url     = 'http://app.net/libertarian'
     $telephone       = '(240) 285-9823'
     $address         = 'P.O. Box 1425, Frederick, MD 21702'
 

@@ -203,3 +203,16 @@ i {
   margin-left: auto;
   margin-right: auto;
 }
+
+// CUSTOM STYLES
+
+body > div.container.colophon {
+  padding-top: 0.5em !important;
+}
+body > div.container.colophon > div:nth-child(1) > ul {
+  padding-top: 0.5em;
+}
+body > div.container.colophon > div:nth-child(1) > ul li { } /* Hack to get footer borders to work */
+body > div.container.colophon > div:nth-child(1) > ul > li.divider-vertical {
+  border-right: 3px double #AAA !important;
+}

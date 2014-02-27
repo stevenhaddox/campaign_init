@@ -88,6 +88,8 @@
         <ul class="nav navbar-nav navbar-right">
           <li><a href="<%= $twitter_url %>">Twitter</a></li>
           <li><a href="<%= $facebook_url %>">Facebook</a></li>
+          <li><a href="<%= $google_plus_url %>" rel="publisher">Google+</a></li>
+          <li><a href="<%= $app_net_url %>">App.net</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
@@ -278,18 +280,24 @@
 #--END COMMENTED BLOCK %>
 
 <div class="container colophon">
-  <p class="centered">
-    <a href="<%= $twitter_url %>">Twitter</a> ||
-    <a href="<%= $facebook_url %>">Facebook</a> ||
-    <a href="<%= $google_plus_url %>" rel="publisher">Google+</a> ||
-    <a href="tel:<%= $telephone %>"><%= $telephone %></a>
-    <br />
-    <span class="address"><%= $address %></span>
-    <br />
-    <span class="fec-disclaimer"><%= $fec_disclaimer %></span>
-    <br />
-    <span class="small theme-disclaimer">Flatty theme created by BlackTie.co - Attribution License 3.0 - 2013</span>
-  </p>
+  <div class="centered row">
+    <ul class="list-inline">
+    <li class="divider-vertical"><a href="<%= $twitter_url %>">Twitter</a></li>
+    <li class="divider-vertical"><a href="<%= $facebook_url %>">Facebook</a></li>
+    <li class="divider-vertical"><a href="<%= $google_plus_url %>" rel="publisher">Google+</a></li>
+    <li class="divider-vertical"><a href="<%= $app_net_url %>">App.net</a></li>
+    <li class=""><a href="tel:<%= $telephone %>"><%= $telephone %></a></li>
+    </ul>
+  </div>
+  <div class="centered row">
+    <div class="col-xs-12 address"><%= $address %></div>
+  </div>
+  <div class="centered row">
+    <div class="col-xs-12 fec-disclaimer"><%= $fec_disclaimer %></div>
+  </div>
+  <div class="centered row">
+    <div class="col-xs-12 small theme-disclaimer">Flatty theme created by BlackTie.co - Attribution License 3.0 - 2013</div>
+  </div>
 </div><!-- /container -->
 
   <!-- Bootstrap core JavaScript
