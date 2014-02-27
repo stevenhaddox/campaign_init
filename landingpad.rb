@@ -22,10 +22,11 @@ class LandingPad < Sinatra::Base
     $fec_disclaimer = "Paid for by Steven Haddox, MD-8 Libertarian Candidate for Congress"
 
     # Social media
-    $twitter_url  = 'http://twitter.com/haddox4house'
-    $facebook_url = 'http://facebook.com/haddox4house'
-    $telephone    = '(240) 285-9823'
-    $address      = 'P.O. Box 1425, Frederick, MD 21702'
+    $twitter_url     = 'http://twitter.com/haddox4house'
+    $facebook_url    = 'http://facebook.com/haddox4house'
+    $google_plus_url = 'https://plus.google.com/112627062502330983262'
+    $telephone       = '(240) 285-9823'
+    $address         = 'P.O. Box 1425, Frederick, MD 21702'
 
     #your google analyics tracking key, if applicable
     $google_analytics_key = 'UA-48247659-1'
