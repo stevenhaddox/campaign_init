@@ -9,6 +9,7 @@
 
 body {
   // background-color: #f2f2f2;
+  background-color: #115D8E;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 16px;
@@ -55,7 +56,8 @@ p {
 /* Links */
 a {
   // color: #3498db;
-  color: #999;
+  color: #f0ad4e;
+  font-weight: bold;
   word-wrap: break-word;
 
   -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -97,6 +99,7 @@ a:after {
 
 .navbar-default {
   // background-color: #3498db;
+  background-color: #115D8E;
   border-color: transparent;
 }
 
@@ -106,6 +109,11 @@ a:after {
 
 .navbar-default .navbar-nav > li > a {
   // color: white;
+}
+
+.navbar-default a:hover {
+  background-color: transparent !important;
+  color: #f0ad4e !important;
 }
 
 /* Helpers */
