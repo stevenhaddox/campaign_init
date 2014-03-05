@@ -17,8 +17,13 @@ class LandingPad < Sinatra::Base
     # Page settings - used to configure your landing page
     $page_title     = 'Steven Haddox for House of Representatives, MD-8'
     $home_link      = 'Haddox4House'
-    $app_title      = 'Steven Haddox for Congress'
     $app_summary    = '#haddox4house'
+    $header_text    = "
+      Personal Liberty,<br />
+      Civic Responsibility,<br />
+      Government Accountability
+    "
+    $signup_text    = "Sign up for my newsletter!"
     $fec_disclaimer = "Paid for by Steven Haddox, MD-8 Libertarian Candidate for Congress"
 
     # Social media

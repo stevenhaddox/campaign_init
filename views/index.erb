@@ -102,11 +102,9 @@
       <div class="row">
         <div class="col-lg-7">
           <h1>
-            Personal Liberty,<br />
-            Civic Responsibility,<br />
-            Government Accountability
+            <%= $header_text %>
           </h1>
-          <h1>Sign up for my newsletter!</h1>
+          <h1><%= $signup_text %></h1>
 
           <div id="form_div">
             <form id="subscribe" class="form-inline" role="form">
@@ -129,178 +127,26 @@
     </div><!-- /container -->
   </div><!-- /headerwrap -->
 
-
-<%#= COMMENT IT ALL OUT!
-  <div class="container">
-    <div class="row mt centered">
-      <div class="col-lg-6 col-lg-offset-3">
-        <h1>Your Landing Page<br/>Looks Wonderful Now.</h1>
-        <h3>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h3>
-      </div>
-    </div><!-- /row -->
-
-    <div class="row mt centered">
-      <div class="col-lg-4">
-        <img src="assets/img/ser01.png" width="180" alt="">
-        <h4>1 - Browser Compatibility</h4>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
-      </div><!--/col-lg-4 -->
-
-      <div class="col-lg-4">
-        <img src="assets/img/ser02.png" width="180" alt="">
-        <h4>2 - Email Campaigns</h4>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
-
-      </div><!--/col-lg-4 -->
-
-      <div class="col-lg-4">
-        <img src="assets/img/ser03.png" width="180" alt="">
-        <h4>3 - Gather Your Notes</h4>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
-
-      </div><!--/col-lg-4 -->
-    </div><!-- /row -->
+  <div class="container colophon">
+    <div class="centered row">
+      <ul class="list-inline">
+      <li class="divider-vertical"><a href="<%= $twitter_url %>">Twitter</a></li>
+      <li class="divider-vertical"><a href="<%= $facebook_url %>">Facebook</a></li>
+      <li class="divider-vertical"><a href="<%= $google_plus_url %>" rel="publisher">Google+</a></li>
+      <li class="divider-vertical"><a href="<%= $app_net_url %>">App.net</a></li>
+      <li class=""><a href="tel:<%= $telephone %>"><%= $telephone %></a></li>
+      </ul>
+    </div>
+    <div class="centered row">
+      <div class="col-xs-12 address"><%= $address %></div>
+    </div>
+    <div class="centered row">
+      <div class="col-xs-12 fec-disclaimer"><%= $fec_disclaimer %></div>
+    </div>
+    <div class="centered row">
+      <div class="col-xs-12 small theme-disclaimer">Flatty theme created by BlackTie.co - Attribution License 3.0 - 2013</div>
+    </div>
   </div><!-- /container -->
-
-  <div class="container">
-    <hr>
-    <div class="row centered">
-      <div class="col-lg-6 col-lg-offset-3">
-        <form class="form-inline" role="form">
-          <div class="form-group">
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
-          </div>
-          <button type="submit" class="btn btn-warning btn-lg">Invite Me!</button>
-        </form>
-      </div>
-      <div class="col-lg-3"></div>
-    </div><!-- /row -->
-    <hr>
-  </div><!-- /container -->
-
-  <div class="container">
-    <div class="row mt centered">
-      <div class="col-lg-6 col-lg-offset-3">
-        <h1>Flatty is for Everyone.</h1>
-        <h3>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h3>
-      </div>
-    </div><!-- /row -->
-
-    <! -- CAROUSEL -->
-    <div class="row mt centered">
-      <div class="col-lg-6 col-lg-offset-3">
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-          </ol>
-
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item active">
-              <img src="assets/img/p01.png" alt="">
-            </div>
-            <div class="item">
-              <img src="assets/img/p02.png" alt="">
-            </div>
-            <div class="item">
-              <img src="assets/img/p03.png" alt="">
-            </div>
-          </div>
-        </div>
-      </div><!-- /col-lg-8 -->
-    </div><!-- /row -->
-  </div><! --/container -->
-
-  <div class="container">
-    <hr>
-    <div class="row centered">
-      <div class="col-lg-6 col-lg-offset-3">
-        <form class="form-inline" role="form">
-          <div class="form-group">
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
-          </div>
-          <button type="submit" class="btn btn-warning btn-lg">Invite Me!</button>
-        </form>
-      </div>
-      <div class="col-lg-3"></div>
-    </div><!-- /row -->
-    <hr>
-  </div><!-- /container -->
-
-  <div class="container">
-    <div class="row mt centered">
-      <div class="col-lg-6 col-lg-offset-3">
-        <h1>Our Awesome Team.<br/>Design Lovers.</h1>
-        <h3>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h3>
-      </div>
-    </div><!-- /row -->
-
-    <div class="row mt centered">
-      <div class="col-lg-4">
-        <img class="img-circle" src="assets/img/pic1.jpg" width="140" alt="">
-        <h4>Michael Robson</h4>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
-        <p><i class="glyphicon glyphicon-send"></i> <i class="glyphicon glyphicon-phone"></i> <i class="glyphicon glyphicon-globe"></i></p>
-      </div><!--/col-lg-4 -->
-
-      <div class="col-lg-4">
-        <img class="img-circle" src="assets/img/pic2.jpg" width="140" alt="">
-        <h4>Pete Ford</h4>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
-        <p><i class="glyphicon glyphicon-send"></i> <i class="glyphicon glyphicon-phone"></i> <i class="glyphicon glyphicon-globe"></i></p>
-      </div><!--/col-lg-4 -->
-
-      <div class="col-lg-4">
-        <img class="img-circle" src="assets/img/pic3.jpg" width="140" alt="">
-        <h4>Angelica Finning</h4>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
-        <p><i class="glyphicon glyphicon-send"></i> <i class="glyphicon glyphicon-phone"></i> <i class="glyphicon glyphicon-globe"></i></p>
-      </div><!--/col-lg-4 -->
-    </div><!-- /row -->
-  </div><!-- /container -->
-
-  <div class="container">
-    <hr>
-    <div class="row centered">
-      <div class="col-lg-6 col-lg-offset-3">
-        <form class="form-inline" role="form">
-          <div class="form-group">
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
-          </div>
-          <button type="submit" class="btn btn-warning btn-lg">Invite Me!</button>
-        </form>
-      </div>
-      <div class="col-lg-3"></div>
-    </div><!-- /row -->
-    <hr>
-    <p class="centered">Flatty theme created by BlackTie.co - Attribution License 3.0 - 2013</p>
-  </div><!-- /container -->
-
-#--END COMMENTED BLOCK %>
-
-<div class="container colophon">
-  <div class="centered row">
-    <ul class="list-inline">
-    <li class="divider-vertical"><a href="<%= $twitter_url %>">Twitter</a></li>
-    <li class="divider-vertical"><a href="<%= $facebook_url %>">Facebook</a></li>
-    <li class="divider-vertical"><a href="<%= $google_plus_url %>" rel="publisher">Google+</a></li>
-    <li class="divider-vertical"><a href="<%= $app_net_url %>">App.net</a></li>
-    <li class=""><a href="tel:<%= $telephone %>"><%= $telephone %></a></li>
-    </ul>
-  </div>
-  <div class="centered row">
-    <div class="col-xs-12 address"><%= $address %></div>
-  </div>
-  <div class="centered row">
-    <div class="col-xs-12 fec-disclaimer"><%= $fec_disclaimer %></div>
-  </div>
-  <div class="centered row">
-    <div class="col-xs-12 small theme-disclaimer">Flatty theme created by BlackTie.co - Attribution License 3.0 - 2013</div>
-  </div>
-</div><!-- /container -->
 
   <!-- Bootstrap core JavaScript
   ================================================== -->
