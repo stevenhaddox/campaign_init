@@ -27,6 +27,7 @@ class LandingPad < Sinatra::Base
     $fec_disclaimer = "Paid for by Steven Haddox, MD-8 Libertarian Candidate for Congress"
 
     # Social media
+    $blog_url        = 'http://blog.haddox4house.com'
     $twitter_url     = 'http://twitter.com/haddox4house'
     $facebook_url    = 'http://facebook.com/haddox4house'
     $google_plus_url = 'https://plus.google.com/112627062502330983262'
